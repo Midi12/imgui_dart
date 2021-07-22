@@ -1,0 +1,34 @@
+class ImGuiWindowFlags {
+  static const int None = 0;
+  static const int NoTitleBar = 1;
+  static const int NoResize = 2;
+  static const int NoMove = 4;
+  static const int NoScrollbar = 8;
+  static const int NoScrollWithMouse = 16;
+  static const int NoCollapse = 32;
+  static const int AlwaysAutoResize = 64;
+  static const int NoBackground = 128;
+  static const int NoSavedSettings = 256;
+  static const int NoMouseInputs = 512;
+  static const int MenuBar = 1024;
+  static const int HorizontalScrollbar = 2048;
+  static const int NoFocusOnAppearing = 4096;
+  static const int NoBringToFrontOnFocus = 8192;
+  static const int AlwaysVerticalScrollbar = 16384;
+  static const int AlwaysHorizontalScrollbar = 32768;
+  static const int AlwaysUseWindowPadding = 65536;
+  static const int NoNavInputs = 262144;
+  static const int NoNavFocus = 524288;
+  static const int UnsavedDocument = 1048576;
+  static const int NoDocking = 2097152;
+  static const int NoNav = 786432;
+  static const int NoDecoration = 43;
+  static const int NoInputs = 786944;
+  static const int NavFlattened = 8388608;
+  static const int ChildWindow = 16777216;
+  static const int Tooltip = 33554432;
+  static const int Popup = 67108864;
+  static const int Modal = 134217728;
+  static const int ChildMenu = 268435456;
+  static const int DockNodeHost = 536870912;
+}
