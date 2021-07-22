@@ -8,3 +8,7 @@ ImGui bindings for Dart language.
 import 'package:imgui_dart/imgui_dart.dart';
 
 ```
+
+## Work in progress
+
+This is a WIP, minimal example with windows directx 9 is required to test it
