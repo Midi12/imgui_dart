@@ -6,46 +6,45 @@ import 'ImVector.g.dart';
 import 'ImVec4.g.dart';
 
 class ImFontAtlas extends Struct {
-  
   /// Enum ImFontAtlasFlags
   @Uint32()
   external int flags;
-  
+
   @IntPtr()
   external int texID;
-  
+
   @Int32()
   external int texDesiredWidth;
-  
+
   @Int32()
   external int texGlyphPadding;
-  
+
   @Uint8()
   external int locked;
-  
+
   @Uint8()
   external int texPixelsUseColors;
-  
+
   external Pointer<Uint8> texPixelsAlpha8;
-  
+
   external Pointer<Uint32> texPixelsRGBA32;
-  
+
   @Int32()
   external int texWidth;
-  
+
   @Int32()
   external int texHeight;
-  
+
   external ImVec2 texUvScale;
-  
+
   external ImVec2 texUvWhitePixel;
-  
+
   external ImVector fonts;
-  
+
   external ImVector customRects;
-  
+
   external ImVector configData;
-  
+
   external ImVec4 texUvLines_0;
   external ImVec4 texUvLines_1;
   external ImVec4 texUvLines_2;
@@ -110,16 +109,15 @@ class ImFontAtlas extends Struct {
   external ImVec4 texUvLines_61;
   external ImVec4 texUvLines_62;
   external ImVec4 texUvLines_63;
-  
+
   external Pointer<IntPtr> fontBuilderIO;
-  
+
   @Uint32()
   external int fontBuilderFlags;
-  
+
   @Int32()
   external int packIdMouseCursors;
-  
+
   @Int32()
   external int packIdLines;
-  
 }

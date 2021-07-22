@@ -5,114 +5,113 @@ import 'ImGuiDir.g.dart';
 import 'ImVec4.g.dart';
 
 class ImGuiStyle extends Struct {
-  
   @Float()
   external double alpha;
-  
+
   external ImVec2 windowPadding;
-  
+
   @Float()
   external double windowRounding;
-  
+
   @Float()
   external double windowBorderSize;
-  
+
   external ImVec2 windowMinSize;
-  
+
   external ImVec2 windowTitleAlign;
-  
+
   /// Enum ImGuiDir
   @Uint32()
   external int windowMenuButtonPosition;
-  
+
   @Float()
   external double childRounding;
-  
+
   @Float()
   external double childBorderSize;
-  
+
   @Float()
   external double popupRounding;
-  
+
   @Float()
   external double popupBorderSize;
-  
+
   external ImVec2 framePadding;
-  
+
   @Float()
   external double frameRounding;
-  
+
   @Float()
   external double frameBorderSize;
-  
+
   external ImVec2 itemSpacing;
-  
+
   external ImVec2 itemInnerSpacing;
-  
+
   external ImVec2 cellPadding;
-  
+
   external ImVec2 touchExtraPadding;
-  
+
   @Float()
   external double indentSpacing;
-  
+
   @Float()
   external double columnsMinSpacing;
-  
+
   @Float()
   external double scrollbarSize;
-  
+
   @Float()
   external double scrollbarRounding;
-  
+
   @Float()
   external double grabMinSize;
-  
+
   @Float()
   external double grabRounding;
-  
+
   @Float()
   external double logSliderDeadzone;
-  
+
   @Float()
   external double tabRounding;
-  
+
   @Float()
   external double tabBorderSize;
-  
+
   @Float()
   external double tabMinWidthForCloseButton;
-  
+
   /// Enum ImGuiDir
   @Uint32()
   external int colorButtonPosition;
-  
+
   external ImVec2 buttonTextAlign;
-  
+
   external ImVec2 selectableTextAlign;
-  
+
   external ImVec2 displayWindowPadding;
-  
+
   external ImVec2 displaySafeAreaPadding;
-  
+
   @Float()
   external double mouseCursorScale;
-  
+
   @Uint8()
   external int antiAliasedLines;
-  
+
   @Uint8()
   external int antiAliasedLinesUseTex;
-  
+
   @Uint8()
   external int antiAliasedFill;
-  
+
   @Float()
   external double curveTessellationTol;
-  
+
   @Float()
   external double circleTessellationMaxError;
-  
+
   external ImVec4 colors_0;
   external ImVec4 colors_1;
   external ImVec4 colors_2;
@@ -168,5 +167,4 @@ class ImGuiStyle extends Struct {
   external ImVec4 colors_52;
   external ImVec4 colors_53;
   external ImVec4 colors_54;
-  
 }

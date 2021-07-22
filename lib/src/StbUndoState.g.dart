@@ -3,7 +3,6 @@ import 'dart:ffi';
 import 'StbUndoRecord.g.dart';
 
 class StbUndoState extends Struct {
-  
   external StbUndoRecord undo_rec_0;
   external StbUndoRecord undo_rec_1;
   external StbUndoRecord undo_rec_2;
@@ -103,20 +102,19 @@ class StbUndoState extends Struct {
   external StbUndoRecord undo_rec_96;
   external StbUndoRecord undo_rec_97;
   external StbUndoRecord undo_rec_98;
-  
+
   @Array(999)
   external Array<Uint16> undo_char;
-  
+
   @Int16()
   external int undo_point;
-  
+
   @Int16()
   external int redo_point;
-  
+
   @Int32()
   external int undo_char_point;
-  
+
   @Int32()
   external int redo_char_point;
-  
 }
