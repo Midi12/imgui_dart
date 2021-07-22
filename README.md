@@ -1,19 +1,10 @@
-A library for Dart developers.
+# imgui_dart
+
+ImGui bindings for Dart language.
 
 ## Usage
-
-A simple usage example:
 
 ```dart
 import 'package:imgui_dart/imgui_dart.dart';
 
-main() {
-  var awesome = new Awesome();
-}
 ```
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
