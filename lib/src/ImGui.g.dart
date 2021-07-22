@@ -1,3 +1,4 @@
+import 'dart:io' show Platform;
 import 'dart:ffi';
 import 'ImGuiPayload.g.dart';
 import 'ImGuiDragDropFlags.g.dart';
@@ -61,7 +62,23 @@ import 'ImGuiTextBuffer.g.dart';
 import 'ImGuiTextFilter.g.dart';
 import 'ImGuiTextRange.g.dart';
 
-final _cimgui = DynamicLibrary.open('cimgui.dll');
+DynamicLibrary initializeImGui() {
+  var dll = '';
+
+  if (Platform.isWindows) {
+    dll = 'cimgui64.dll';
+  } else if (Platform.isMacOS) {
+    dll = 'cimgui64.dylib';
+  } else if (Platform.isLinux) {
+    dll = 'cimgui64.so';
+  } else {
+    throw Exception('Unsupported platform');
+  }
+
+  return DynamicLibrary.open(dll);
+}
+
+final _cimgui = initializeImGui();
 
 ///```c
 /// ImGuiPayload* igAcceptDragDropPayload(
